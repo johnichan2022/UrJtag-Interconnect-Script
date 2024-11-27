@@ -89,6 +89,13 @@ sudo chgrp -R $USER ./*
 
 ### Custom Configuration in autogen.sh
 To customize the configuration in the ./autogen.sh file for your URJTAG source code, replace the following line:
+
+First generate configure file as tar file does not contain it
+```bash
+autoreconf -i
+ls | grep config
+```
+
 ```bash
 ./configure --enable-maintainer-mode --with-libusb --with-libftdi --with-ftd2xx "$@"
 ```
