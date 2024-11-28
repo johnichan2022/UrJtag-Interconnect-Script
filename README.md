@@ -13,6 +13,7 @@ The below command  samples part 0 in the chain and drive part 1 in the chain for
 
 "sudo python walkin__sample_use_partid_cli_time.py --extest 1 --extestalias extest_device --sample 0 --samplealias sample_device --debug 0"
 
+"sudo pip install --break-system-packages keyboard" if you are getting "ModuleNotFoundError: No module named 'keyboard'" error
 
 Refer http://urjtag.org for more details on UrJTAG.
 
